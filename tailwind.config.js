@@ -23,7 +23,7 @@ export default {
         bitterSweet: "#FF6161ff",
         midnightGreen: "#1B4652ff",
         celeste: "#B1EAE2ff",
-        tiffanyBlue: "#9CE3DCff",
+        tiffanyGreen: "#9CE3DCff",
         gunMetal: "#1D333Dff",
         tiffanyBlue: "#7AC6C3ff",
       },

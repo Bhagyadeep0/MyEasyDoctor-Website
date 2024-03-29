@@ -9,10 +9,10 @@ import { FaRegSave } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="w-full h-full bg-celeste relative">
-      <Navigation className="fixed" />
+    <div className="w-full h-full mt-[90px] xl:h-[80vh] bg-celeste relative">
+      <Navigation />
       {/* hero centered */}
-      <div className="flex justify-center w-full h-full">
+      <div className="flex justify-center w-full h-full "> 
         {/* contents */}
         <motion.div className="flex flex-col lg:flex-row justify-between items-center container m-auto">
           {/* text */}
@@ -33,8 +33,8 @@ const Hero = () => {
               {/* image & animation on small screen */}
           <div className=" lg:hidden flex relative pointer-events-none">
           {/* image */}
-            <div className="imageContainer flex-1 flex justify-center rounded-full after:absolute after:bg-white after:w-full after:h-full after:rounded-full after:top-5 ">
-              <img src="/doctor01.png" alt="doctor.png" width={300} className=" z-[2]" />
+            <div className="imageContainer flex-1 flex justify-center rounded-full ">
+              <img src="/doctor01.png" alt="doctor.png" width={300}  />
             </div>
             {/* floating elements */}
             <div className="text-xl">
