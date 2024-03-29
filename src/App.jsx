@@ -1,10 +1,14 @@
 // global css
-import './global.css'
+import './global.css';
+
+// Import components
+import Hero from './components/Hero';
+
 
 const App = () => {
   return (
     <div>
-      <h1 className='h1 text-blue-700 '>MyEasyDoctor!</h1>
+      <Hero />
     </div>
   )
 }
