@@ -4,20 +4,32 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        x: {
+        moveX: {
           '0%': { transform: 'translateX(0px)' },
           '50%': { transform:' translateX(50px)' },
           '100%': { transform:' translateX(0px)' },
         },
-        y: {
+        moveY: {
           '0%': { transform: 'translateY(0px)' },
           '50%': { transform:' translateY(50px)' },
           '100%': { transform:' translateY(0px)' },
         },
+        moveXRe: {
+          '0%': { transform: 'translateX(0px)' },
+          '50%': { transform:' translateX(-50px)' },
+          '100%': { transform:' translateX(0px)' },
+        },
+        moveYRe: {
+          '0%': { transform: 'translateY(0px)' },
+          '50%': { transform:' translateY(-50px)' },
+          '100%': { transform:' translateY(0px)' },
+        },
       },
       animation: {
-        'up-down': 'y 5s linear infinite',
-        'left-right': 'x 5s linear infinite',
+        'moveY': 'moveY 5s linear infinite',
+        'moveX': 'moveX 5s linear infinite',
+        'moveYRe': 'moveYRe 5s linear infinite',
+        'moveXRe': 'moveXRe 5s linear infinite',
       },
       colors: {
         bitterSweet: "#FF6161ff",

@@ -40,25 +40,25 @@ const Hero = () => {
               </div>
               {/* floating elements */}
               <div className="text-xl">
-                <p className="flex items-center gap-2 absolute bottom-[15.5em] left-[3em] bg-white rounded-full px-2 font-semibold animate-left-right">
+                <p className="flex items-center gap-2 absolute bottom-[15.5em] left-[3em] bg-white rounded-full px-2 font-semibold animate-moveX">
                   <span>
                     <SiSpeedtest />{" "}
                   </span>
                   <span>Fast & Secure</span>
                 </p>
-                <p className="flex items-center gap-2 absolute bottom-[9em] left-[1em] bg-white rounded-full px-2 font-semibold animate-left-right">
+                <p className="flex items-center gap-2 absolute bottom-[9em] left-[1em] bg-white rounded-full px-2 font-semibold animate-moveXRe">
                   <span>
                     <FaUserDoctor />{" "}
                   </span>
                   <span>Talk to Doctor</span>
                 </p>
-                <p className="flex items-center gap-2 absolute top-[9em] right-[3em] bg-white rounded-full px-2 font-semibold animate-left-right">
+                <p className="flex items-center gap-2 absolute top-[9em] right-[3em] bg-white rounded-full px-2 font-semibold animate-moveX">
                   <span>
                     <FaRegSave />{" "}
                   </span>
                   <span>Save Records</span>
                 </p>
-                <p className="flex items-center gap-2 absolute top-[15.5em] right-[6em] bg-white rounded-full px-2 font-semibold animate-left-right">
+                <p className="flex items-center gap-2 absolute top-[15.5em] right-[6em] bg-white rounded-full px-2 font-semibold animate-moveXRe">
                   <span>
                     <SiSpeedtest />{" "}
                   </span>
@@ -79,7 +79,7 @@ const Hero = () => {
             </div>
             {/* floating elements */}
             <div className="text-xl">
-              <p className="flex items-center gap-2 absolute bottom-[15.5em] left-[-6em] bg-white rounded-full px-2 font-semibold animate-left-right">
+              <p className="flex items-center gap-2 absolute bottom-[15.5em] left-[-6em] bg-white rounded-full px-2 font-semibold animate-moveY">
                 <span>
                   {/* logo */}
                   <SiSpeedtest />
@@ -87,7 +87,7 @@ const Hero = () => {
                 {/* text */}
                 <span>Fast & Secure</span>
               </p>
-              <p className="flex items-center gap-2 absolute bottom-[5em] left-[1em] bg-white rounded-full px-2 font-semibold animate-left-right">
+              <p className="flex items-center gap-2 absolute bottom-[5em] left-[1em] bg-white rounded-full px-2 font-semibold animate-moveYRe">
                 <span>
                   {/* logo */}
                   <FaUserDoctor />{" "}
@@ -95,7 +95,7 @@ const Hero = () => {
                 {/* text */}
                 <span>Talk to Doctor</span>
               </p>
-              <p className="flex items-center gap-2 absolute top-[12em] right-[6em] bg-white rounded-full px-2 font-semibold animate-left-right">
+              <p className="flex items-center gap-2 absolute top-[12em] right-[6em] bg-white rounded-full px-2 font-semibold animate-moveYRe">
                 <span>
                   {/* logo */}
                   <FaRegSave />{" "}
@@ -103,7 +103,7 @@ const Hero = () => {
                 {/* text */}
                 <span>Save Records</span>
               </p>
-              <p className="flex items-center gap-2 absolute top-[17.5em] right-[2em] bg-white rounded-full px-2 font-semibold animate-left-right">
+              <p className="flex items-center gap-2 absolute top-[17.5em] right-[2em] bg-white rounded-full px-2 font-semibold animate-moveY">
                 <span>
                   {/* logo */}
                   <SiSpeedtest />{" "}
