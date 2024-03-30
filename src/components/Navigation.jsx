@@ -4,9 +4,10 @@ import { easeInOut, motion, useCycle, AnimatePresence } from "framer-motion";
 const Navigation = () => {
   // navigation data
   const navData = [
-    { name: "Home", path: "/" },
-    { name: "About Us", path: "/About Us" },
-    { name: "Contact", path: "/Contact" },
+    { name: "home", path: "/" },
+    { name: "doctors", path: "/doctors" },
+    { name: "about Us", path: "/About Us" },
+    { name: "contact", path: "/Contact" },
     { name: "register", path: "/register" },
   ];
 
