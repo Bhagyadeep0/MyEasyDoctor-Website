@@ -12,19 +12,19 @@ const Hero = () => {
     <div className="w-full h-full mt-[90px] xl:h-[80vh] bg-celeste relative">
       <Navigation />
       {/* hero centered */}
-      <div className="flex justify-center w-full h-full ">
+      <div className="flex flex-wrap justify-center w-full h-full ">
         {/* contents */}
         <motion.div className="flex flex-col lg:flex-row justify-between items-center container m-auto">
           {/* text */}
           <div className="flex-1 text-center lg:text-left lg:max-w-[50%] py-3 px-4">
             {/* title */}
-            <h1 className="h1">
+            <h1 className="h1 text-wrap">
               <span className="text-tiffanyBlue">MyEasyDoctor</span>
               <br />
               Where <i>Appointments</i> Meet <i>Convenience</i>.
             </h1>
             {/* desc */}
-            <p className="text-red-500 mb-4 p">
+            <p className="text-red-500 mb-4 p text-wrap">
               MyEasyDoctor is like a helpful digital assistant for your health!
               It's a safe and flexible platform that makes it easy for hospitals
               and clinics to support people on their health journeys. With its
@@ -39,26 +39,26 @@ const Hero = () => {
                 <img src="/doctor01.png" alt="doctor.png" width={300} />
               </div>
               {/* floating elements */}
-              <div className="text-xl">
-                <p className="flex items-center gap-2 absolute bottom-[15.5em] left-[3em] bg-white rounded-full px-2 font-semibold animate-moveX">
+              <div className="text-sm leading-3">
+                <p className="flex items-center gap-2 absolute top-[.5em] left-0 bg-white rounded-full px-2 font-semibold animate-moveX">
                   <span>
                     <SiSpeedtest />{" "}
                   </span>
                   <span>Fast & Secure</span>
                 </p>
-                <p className="flex items-center gap-2 absolute bottom-[9em] left-[1em] bg-white rounded-full px-2 font-semibold animate-moveXRe">
+                <p className="flex items-center gap-2 absolute bottom-[10em] left-[2em] bg-white rounded-full px-2 font-semibold animate-moveXRe">
                   <span>
                     <FaUserDoctor />{" "}
                   </span>
                   <span>Talk to Doctor</span>
                 </p>
-                <p className="flex items-center gap-2 absolute top-[9em] right-[3em] bg-white rounded-full px-2 font-semibold animate-moveX">
+                <p className="flex items-center gap-2 absolute top-[12.5em] right-[3em] bg-white rounded-full px-2 font-semibold animate-moveX">
                   <span>
                     <FaRegSave />{" "}
                   </span>
                   <span>Save Records</span>
                 </p>
-                <p className="flex items-center gap-2 absolute top-[15.5em] right-[6em] bg-white rounded-full px-2 font-semibold animate-moveXRe">
+                <p className="flex items-center gap-2 absolute bottom-[.5em] right-0 bg-white rounded-full px-2 font-semibold animate-moveXRe">
                   <span>
                     <SiSpeedtest />{" "}
                   </span>

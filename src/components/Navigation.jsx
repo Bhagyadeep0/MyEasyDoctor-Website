@@ -2,17 +2,10 @@
 import { easeInOut, motion, useCycle, AnimatePresence } from "framer-motion";
 
 //components
-import Register from '../components/Register'
+import Register from "../components/Register";
+import Link from "./Link";
 
 const Navigation = () => {
-  // navigation data
-  const navData = [
-    { name: "home", path: "/" },
-    { name: "doctors", path: "/doctors" },
-    { name: "about Us", path: "/About Us" },
-    { name: "contact", path: "/Contact" },
-  ];
-
   const [toggle, setToggle] = useCycle(false, true);
 
   return (
@@ -66,19 +59,21 @@ const Navigation = () => {
                     variants={{
                       close: {
                         x: "-100%",
+                        clipPath: "circle(30px at 50px 50px)",
                         transition: {
                           staggerChildren: 0.25,
                           when: "afterChildren",
-                          duration: 0.5,
+                          duration: 1,
                           ease: easeInOut,
                         },
                       },
                       open: {
                         x: "0%",
+                        clipPath: "circle(600px at 50px 50px)",
                         transition: {
                           staggerChildren: 0.25,
                           when: "beforeChildren",
-                          duration: 0.35,
+                          duration: 1,
                           ease: easeInOut,
                         },
                       },
@@ -100,17 +95,9 @@ const Navigation = () => {
                         close: { y: "-20%", opacity: 0 },
                         open: { y: "0%", opacity: 1 },
                       }}
-                      className="space-y-10"
+                      className="space-y-10 lg:hidden"
                     >
-                      {navData.map((item, index) => (
-                        <a
-                          href={item.path}
-                          key={index}
-                          className="flex justify-center text-3xl font-medium text-bitterSweet capitalize focus:outline-none"
-                        >
-                          {item.name}
-                        </a>
-                      ))}
+                      <Link />
                     </motion.div>
                     {/* socials */}
                     <motion.div
@@ -129,23 +116,16 @@ const Navigation = () => {
 
           {/* large screen  */}
           <div className="flex items-center justify-between gap-x-5">
-            <div className="flex gap-x-8">
-              {navData.map((item, index) => (
-                <div>
-                  <a
-                    href={item.path}
-                    key={index}
-                    className="hidden lg:flex text-2xl font-medium text-bitterSweet capitalize focus:outline-none"
-                  >
-                    {item.name}
-                  </a>
-                </div>
-              ))}
+            {/* links */}
+            <div className="lg:flex gap-x-8 hidden">
+              <Link />
             </div>
           </div>
         </div>
-         {/* social */}
-         <div className="hidden lg:flex text-2xl"><Register /></div>
+        {/* social */}
+        <div className="hidden lg:flex text-2xl">
+          <Register />
+        </div>
       </ul>
     </nav>
   );
