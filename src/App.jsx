@@ -7,6 +7,7 @@ import Doctor from "./components/Doctors";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Support from "./components/Support";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Hero />
       </section>
       <section id="doctors">
+        <Support />
         <Doctor />
       </section>
       <section id="about">
