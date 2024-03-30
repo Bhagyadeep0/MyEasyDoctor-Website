@@ -1,6 +1,9 @@
 //import framer motion
 import { easeInOut, motion, useCycle, AnimatePresence } from "framer-motion";
 
+//components
+import Register from '../components/Register'
+
 const Navigation = () => {
   // navigation data
   const navData = [
@@ -8,7 +11,6 @@ const Navigation = () => {
     { name: "doctors", path: "/doctors" },
     { name: "about Us", path: "/About Us" },
     { name: "contact", path: "/Contact" },
-    { name: "register", path: "/register" },
   ];
 
   const [toggle, setToggle] = useCycle(false, true);
@@ -117,7 +119,7 @@ const Navigation = () => {
                         open: { y: "0%", opacity: 1 },
                       }}
                     >
-                      Social
+                      <Register />
                     </motion.div>
                   </motion.div>
                 )}
@@ -143,7 +145,7 @@ const Navigation = () => {
           </div>
         </div>
          {/* social */}
-         <div className="hidden lg:flex text-2xl">Social</div>
+         <div className="hidden lg:flex text-2xl"><Register /></div>
       </ul>
     </nav>
   );
