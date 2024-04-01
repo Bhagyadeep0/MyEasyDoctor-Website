@@ -1,9 +1,10 @@
-
+// react icons
+import { FaFacebookF,FaInstagram,FaXTwitter } from "react-icons/fa6";
 
 const Social = () => {
   return (
     <div>
-      Social
+      <FaFacebookF /> <FaInstagram /> <FaXTwitter/>
     </div>
   )
 }

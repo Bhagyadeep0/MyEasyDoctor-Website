@@ -1,25 +1,28 @@
+// react router
+import { NavLink } from "react-router-dom";
+
 const Link = () => {
   // navigation data
   const navData = [
-    { name: "home", path: "home" },
-    { name: "doctors", path: "doctors" },
-    { name: "about us", path: "about" },
-    { name: "contact", path: "contact" },
+    { id:"1", name: "home", path: "/" },
+    { id:"2", name: "doctors", path: "/doctors" },
+    { id:"3", name: "about us", path: "/about" },
+    { id:"4", name: "contact", path: "/contact" },
   ];
   return (
-    <>
-      {navData.map((item, index) => (
-          <div className="flex justify-center items-center">
-          <a
-            href={`#${item.path}`}
-            key={index}
-            className="flex text-2xl font-medium text-bitterSweet capitalize focus:outline-none"
+      <ul className="flex flex-col lg:flex-row gap-y-5 gap-x-8 items-center">
+      {navData.map((item) => (
+          <li className="text-[20px] capitalize">
+          <NavLink
+            to={item.path}
+            key={item.id}
+            className={navClass=>navClass.isActive ? "text-red-500" : "text-blue-500 hover:text-red-500"}
             >
             {item.name}
-          </a>
-        </div>
+          </NavLink>
+        </li>
       ))}
-      </>
+      </ul>
   );
 };
 

@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        customFont: ['"Lato"', "sans-serif"],
+      },
       keyframes: {
         moveX: {
           '0%': { transform: 'translateX(0px)' },

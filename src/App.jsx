@@ -1,34 +1,31 @@
-// global css
+//global css
 import "./global.css";
-
-// Import components
-import Hero from "./components/Hero";
-import Doctor from "./components/Doctors";
-import About from "./components/About";
-import Contact from "./components/Contact";
+// import react
+import React from "react";
+// react router
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// components
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact"
+import SignUp from "./pages/SignUp"
 import Footer from "./components/Footer";
-import Support from "./components/Support";
+import Doctors from "./pages/Doctors";
 
 const App = () => {
   return (
-    <div>
-      <section id="home">
-        <Hero />
-      </section>
-      <section id="doctors">
-        <Support />
-        <Doctor />
-      </section>
-      <section id="about">
-        <About />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
-      <section id="footer">
-        <Footer />
-      </section>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/doctors" element={<Doctors />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/sign-up" element={<SignUp />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 };
 

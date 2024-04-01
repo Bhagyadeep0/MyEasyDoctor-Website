@@ -1,5 +1,3 @@
-import Navigation from "./Navigation";
-
 //import framer-motion
 import { motion } from "framer-motion";
 //import react icons
@@ -9,8 +7,7 @@ import { FaRegSave } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="w-full h-full mt-[90px] xl:h-[80vh] bg-celeste relative">
-      <Navigation />
+    <div className="w-full h-full xl:h-[80vh] bg-celeste relative">
       {/* hero centered */}
       <div className="flex flex-wrap justify-center w-full h-full ">
         {/* contents */}
@@ -67,9 +64,9 @@ const Hero = () => {
               </div>
             </div>
             {/* button */}
-            <button className="bg-red-400 mt-5 py-3 px-5 rounded-md text-xl font-medium hover:bg-red-600 transition-all duration-300 ease-in">
+            <a href="https://youtu.be/w4o1bsGnjlQ?si=zrdSJttGhysTk_p8" target="_blank"><button className="bg-red-400 mt-5 py-3 px-5 rounded-md text-xl font-medium hover:bg-red-600 transition-all duration-300 ease-in">
               Watch Intro
-            </button>
+            </button></a>
           </div>
           {/* image & animation on large screen */}
           <div className=" hidden lg:flex relative pointer-events-none ">
@@ -106,7 +103,7 @@ const Hero = () => {
               <p className="flex items-center gap-2 absolute top-[17.5em] right-[2em] bg-white rounded-full px-2 font-semibold animate-moveY">
                 <span>
                   {/* logo */}
-                  <SiSpeedtest />{" "}
+                  <SiSpeedtest />
                 </span>
                 {/* text */}
                 <span>Fast & Secure</span>

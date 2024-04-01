@@ -2,22 +2,23 @@
 import { easeInOut, motion, useCycle, AnimatePresence } from "framer-motion";
 
 //components
-import Register from "../components/Register";
+import Register from "./Register";
 import Link from "./Link";
+
 
 const Navigation = () => {
   const [toggle, setToggle] = useCycle(false, true);
 
   return (
-    <nav className=" w-full bg-white shadow-md fixed top-0 z-[99]">
-      <ul className=" container m-auto w-full h-[90px] px-4 flex justify-between items-center">
+    <header className=" w-full bg-white shadow-md fixed top-0 z-[99]">
+      <div className=" container m-auto w-full h-[90px] px-4 flex justify-between items-center">
         {/* logo */}
         <div className="cursor-pointer">
           <h1 className="text-2xl">Logo</h1>
         </div>
         {/* links */}
         <div>
-          {/* small screen */}
+          {/*---------------------- small screen--------------------------- */}
           <div className="flex lg:hidden">
             {/* toggle button */}
             <motion.button
@@ -59,7 +60,6 @@ const Navigation = () => {
                     variants={{
                       close: {
                         x: "-100%",
-                        clipPath: "circle(30px at 50px 50px)",
                         transition: {
                           staggerChildren: 0.25,
                           when: "afterChildren",
@@ -69,7 +69,6 @@ const Navigation = () => {
                       },
                       open: {
                         x: "0%",
-                        clipPath: "circle(600px at 50px 50px)",
                         transition: {
                           staggerChildren: 0.25,
                           when: "beforeChildren",
@@ -78,7 +77,7 @@ const Navigation = () => {
                         },
                       },
                     }}
-                    className="absolute flex flex-col justify-center items-center top-0 left-0 gap-y-[50px] text-3xl bg-blue-600 h-screen w-full container m-auto"
+                    className="absolute flex flex-col justify-center items-center top-0 left-0 gap-y-[50px] text-3xl bg-blue-600 h-screen w-screen container m-auto"
                   >
                     {/* logo */}
                     <motion.div
@@ -90,7 +89,7 @@ const Navigation = () => {
                       <h1>LOGO</h1>
                     </motion.div>
                     {/* links */}
-                    <motion.div
+                    <motion.nav
                       variants={{
                         close: { y: "-20%", opacity: 0 },
                         open: { y: "0%", opacity: 1 },
@@ -98,7 +97,7 @@ const Navigation = () => {
                       className="space-y-10 lg:hidden"
                     >
                       <Link />
-                    </motion.div>
+                    </motion.nav>
                     {/* socials */}
                     <motion.div
                       variants={{
@@ -114,20 +113,18 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* large screen  */}
-          <div className="flex items-center justify-between gap-x-5">
+          {/*--------------------------- large screen -------------------------- */}
             {/* links */}
-            <div className="lg:flex gap-x-8 hidden">
+            <nav className="lg:flex gap-x-8 hidden">
               <Link />
-            </div>
-          </div>
+            </nav>
         </div>
         {/* social */}
         <div className="hidden lg:flex text-2xl">
           <Register />
         </div>
-      </ul>
-    </nav>
+      </div>
+    </header>
   );
 };
 
