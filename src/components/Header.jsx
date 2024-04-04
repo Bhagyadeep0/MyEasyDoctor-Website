@@ -10,7 +10,7 @@ const Navigation = () => {
   const [toggle, setToggle] = useCycle(false, true);
 
   return (
-    <header className=" w-full bg-white shadow-md fixed top-0 z-[99]">
+    <header className=" w-full bg-white/80 backdrop-blur-sm shadow-md fixed top-0 z-[99]">
       <div className=" container m-auto w-full h-[90px] px-4 flex justify-between items-center">
         {/* logo */}
         <div>

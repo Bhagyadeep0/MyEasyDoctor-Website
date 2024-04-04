@@ -24,7 +24,7 @@
     @apply  m-0 p-0 box-border scroll-smooth font-customFont;
   }
   body {
-    @apply bg-white/60 leading-none mt-[90px] ;
+    @apply bg-white/60 leading-none snap-proximity snap-y mt-[90px] scroll-smooth ;
   }
   .page {
     @apply w-full h-screen ;

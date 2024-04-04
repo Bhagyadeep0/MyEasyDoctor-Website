@@ -8,24 +8,27 @@ import "swiper/css";
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 
 //import react icons
-import { AiFillHeart } from "react-icons/ai";
+import { AiFillHeart, } from "react-icons/ai";
+import { GiBrokenBone,GiTooth,GiBrain } from "react-icons/gi";
+import { RiEye2Fill } from "react-icons/ri";
+import { FaLungs,FaVirus } from "react-icons/fa";
 
 export default () => {
   const swiperData = [
     { id: 1, name: "Cardiology", icon: <AiFillHeart /> },
-    { id: 2, name: "Cardiology", icon: <AiFillHeart /> },
-    { id: 3, name: "Cardiology", icon: <AiFillHeart /> },
-    { id: 4, name: "Cardiology", icon: <AiFillHeart /> },
-    { id: 5, name: "Cardiology", icon: <AiFillHeart /> },
-    { id: 6, name: "Cardiology", icon: <AiFillHeart /> },
-    { id: 7, name: "Cardiology", icon: <AiFillHeart /> },
-    { id: 8, name: "Cardiology", icon: <AiFillHeart /> },
+    { id: 2, name: "orthopedic", icon: <GiBrokenBone /> },
+    { id: 3, name: "dentist", icon: <GiTooth /> },
+    { id: 4, name: "neurology", icon: <GiBrain /> },
+    { id: 5, name: "urology", icon: <AiFillHeart /> },
+    { id: 6, name: "ophthalmology", icon: <RiEye2Fill /> },
+    { id: 7, name: "Cardiology", icon: <FaLungs /> },
+    { id: 8, name: "Co-vid", icon: <FaVirus /> },
     { id: 9, name: "Cardiology", icon: <AiFillHeart /> },
     { id: 10, name: "Cardiology", icon: <AiFillHeart /> },
   ];
 
   return (
-    <div className="py-8 mt-3">
+    <div className="w-full h-full">
       {/* title */}
       <div className="text-center py-3 px-4 "><h1 className="h1">Specialities</h1><hr className="max-w-[80%] m-auto" /></div>
       {/* swiper */}
@@ -61,13 +64,13 @@ export default () => {
                   className="flex justify-center gap-[100px] p-5 items-center container m-auto"
                 >
                   <div
-                    className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-2 py-4 flex-1 flex flex-col  items-center sm:gap-x-6 lg:gap-y-6 group
-            hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300"
+                    className="border-[0.1px] border-gray-500/20 h-max rounded-lg px-2 py-4 flex-1 flex flex-col  items-center sm:gap-x-6 lg:gap-y-6 group
+            hover:border-blue-500/60 transition-all duration-300 group"
                   >
                     {/* icon */}
-                    <div className="text-[60px]">{item.icon}</div>
+                    <div className="text-[60px] text-red-500 group-hover:text-blue-500 transition-all duration-500 ease-linear">{item.icon}</div>
                     {/* name */}
-                    <div className="text-2xl">{item.name}</div>
+                    <div className="text-2xl capitalize">{item.name}</div>
                   </div>
                 </SwiperSlide>
               );

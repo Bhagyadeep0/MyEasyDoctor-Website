@@ -10,21 +10,23 @@ import Contact from "../pages/Contact";
 import SignUp from "../pages/SignUp";
 import Footer from "../components/Footer";
 import Doctors from "../pages/Doctors";
+import Social from "../components/Social";
 
 const Layout = () => {
   return (
     <Router>
       <Header />
+      {/* <Social /> under progress  */}
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/doctors" element={<Doctors />} />
+          <Route path="/doctor" element={<Doctors />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sign-up" element={<SignUp />} />
         </Routes>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 };

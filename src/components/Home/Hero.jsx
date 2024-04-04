@@ -8,10 +8,9 @@ import { FaRegSave } from "react-icons/fa";
 //react icons
 import { FaPlay } from "react-icons/fa6";
 
-
 const Hero = () => {
   return (
-    <div className="w-full h-full xl:h-[80vh] bg-celeste relative">
+    <section className="w-full h-full xl:h-screen bg-celeste relative">
       {/* hero centered */}
       <div className="flex flex-wrap justify-center w-full h-full ">
         {/* contents */}
@@ -124,7 +123,7 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 
