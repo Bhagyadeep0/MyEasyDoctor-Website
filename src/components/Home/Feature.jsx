@@ -23,10 +23,10 @@ const Feature = () => {
   ];
 
   return (
-   <section className="flex justify-center items-center w-full h-full container py-5 mx-auto">
-     <div className="w-full h-full flex flex-col gap-5 lg:gap-[50px] justify-between items-center capitalize">
+   <section className="flex justify-center items-center w-full h-full container py-5 mt-[150px] mx-auto">
+     <div className="w-full h-full flex flex-col gap-5 lg:gap-[50px] justify-between items-center ">
       {/* text */}
-      <div className="text-center pt-5 pb-8 lg:pb-4">
+      <div className="text-center pt-5 pb-8 lg:pb-4 capitalize">
         {/* title */}
         <h1 className="h1">Providing the Best Medical Services</h1>
         {/* desc */}
@@ -42,7 +42,7 @@ const Feature = () => {
           <div className="py-2 px-4 rounded flex-1 flex flex-col text-center items-center justify-between border border-blue-400/20 hover:border-blue-400 transition-all duration-300 ease-in-out">
             {/* textContainer */}
             <div className="" key={item.id}>
-              <h2 className="h2">{item.title}</h2>
+              <h2 className="h2 capitalize">{item.title}</h2>
               {/* desc */}
               <p className="p">{item.desc} </p>
             </div>

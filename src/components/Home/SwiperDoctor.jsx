@@ -28,9 +28,9 @@ export default () => {
   ];
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full my-[150px]">
       {/* title */}
-      <div className="text-center py-3 px-4 "><h1 className="h1">Specialities</h1><hr className="max-w-[80%] m-auto" /></div>
+      <div className="text-center py-3 px-4 "><h1 className="h1">Our <span className="text-red-600/80">Medical</span> Services.</h1><hr className="max-w-[80%] m-auto" /></div>
       {/* swiper */}
       <div>
         {" "}
@@ -70,7 +70,7 @@ export default () => {
                     {/* icon */}
                     <div className="text-[60px] text-red-500 group-hover:text-blue-500 transition-all duration-500 ease-linear">{item.icon}</div>
                     {/* name */}
-                    <div className="text-2xl capitalize">{item.name}</div>
+                    <div className="text-base lg:text-2xl capitalize break-words">{item.name}</div>
                   </div>
                 </SwiperSlide>
               );
@@ -80,7 +80,7 @@ export default () => {
       </div>
       {/* button */}
       <div className="text-center m-9">
-       <a href="/doctors"> <button className="btn">See All</button></a>
+       <a href="/doctors"> <button className="btn">Show Me More</button></a>
       </div>
     </div>
   );

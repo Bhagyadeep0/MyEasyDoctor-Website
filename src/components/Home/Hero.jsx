@@ -5,12 +5,10 @@ import { SiSpeedtest } from "react-icons/si";
 import { FaUserDoctor } from "react-icons/fa6";
 import { FaRegSave } from "react-icons/fa";
 
-//react icons
-import { FaPlay } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <section className="w-full h-full xl:h-screen bg-celeste relative">
+    <section className="w-full h-full xl:h-[82vh] bg-celeste relative">
       {/* hero centered */}
       <div className="flex flex-wrap justify-center w-full h-full ">
         {/* contents */}

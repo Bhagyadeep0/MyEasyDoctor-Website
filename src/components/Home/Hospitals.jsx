@@ -1,7 +1,7 @@
 //import framer motion
 import {motion} from 'framer-motion';
 
-const Support = () => {
+const Hospitals = () => {
 //sliding logo anim
 const sliderVariants = {
     initial: {
@@ -10,20 +10,19 @@ const sliderVariants = {
     animate: {
       x: "-50%",
       transition: {
-        delay: 1.2,
-        duration: 200,
+        delay: 1.5,
+        duration: 100,
         repeat: Infinity,
         repeatType: "mirror",
+        repeatDelay: 0.2,
+        ease: "linear",
       },
   },
 };
   
   return (
-    <div className=" w-full h-fit py-2 px-[10px]text-blue-500/55 bg-black/40">
+    <div className=" w-full h-fit py-2 px-[10px]text-blue-500/55 bg-blue-400/10">
       <motion.div variants={sliderVariants} initial="initial" animate="animate" className="flex justify-between items-center w-full h-full container m-auto">
-        <img src="./jeevan_rekha_hospital.jpg" alt="img" className='logo'/>
-        <img src="./jeevan_rekha_hospital.jpg" alt="img" className='logo'/>
-        <img src="./jeevan_rekha_hospital.jpg" alt="img" className='logo'/>
         <img src="./jeevan_rekha_hospital.jpg" alt="img" className='logo'/>
         <img src="./jeevan_rekha_hospital.jpg" alt="img" className='logo'/>
         <img src="./jeevan_rekha_hospital.jpg" alt="img" className='logo'/>
@@ -34,4 +33,4 @@ const sliderVariants = {
   );
 };
 
-export default Support;
+export default Hospitals;

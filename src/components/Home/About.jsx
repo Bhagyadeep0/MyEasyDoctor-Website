@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="mt-[60px] container mx-auto">
+    <section className="mt-[150px] container mx-auto">
          {/*-------------------------about---------------------- */}
          <div className="flex flex-col md:flex-row flex-wrap justify-between items-center container mx-auto">
           {/* image container */}
@@ -20,9 +20,9 @@ const About = () => {
               transformation for all.
             </p>
             <a href="/about"><button className="mt-5 btn">Tell Me More</button></a>
-            <div className="mt-[30px]">
+            <div className="mt-[30px] italic">
           {/* msg */}
-          <h2 className="text-[20px] lg:text-[25px]  capitalize">
+          <h2 className="text-[20px] lg:text-[25px]  capitalize ">
             “ <span className="text-red-500">Medicines</span> cure diseases, but only doctors can cure <span className="text-blue-500">patients.</span>”
           </h2>
           {/* name */}
