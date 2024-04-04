@@ -27,7 +27,7 @@ export default () => {
   return (
     <div className="py-8 mt-3">
       {/* title */}
-      <div className="text-center py-3 px-4"><h1 className="h1">Specialities</h1></div>
+      <div className="text-center py-3 px-4 "><h1 className="h1">Specialities</h1><hr className="max-w-[80%] m-auto" /></div>
       {/* swiper */}
       <div>
         {" "}
@@ -77,7 +77,7 @@ export default () => {
       </div>
       {/* button */}
       <div className="text-center m-9">
-       <a href="/doctors"> <button className="text-xl py-3 px-4 bg-yellow-500 rounded-sm">See All</button></a>
+       <a href="/doctors"> <button className="btn">See All</button></a>
       </div>
     </div>
   );

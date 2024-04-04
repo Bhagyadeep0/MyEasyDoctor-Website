@@ -5,6 +5,10 @@ import { SiSpeedtest } from "react-icons/si";
 import { FaUserDoctor } from "react-icons/fa6";
 import { FaRegSave } from "react-icons/fa";
 
+//react icons
+import { FaPlay } from "react-icons/fa6";
+
+
 const Hero = () => {
   return (
     <div className="w-full h-full xl:h-[80vh] bg-celeste relative">
@@ -29,7 +33,7 @@ const Hero = () => {
               improves how doctors and patients talk to each other. It's all
               about making healthcare simpler and better for everyone!
             </p>
-            {/* image & animation on small screen */}
+            {/* ------------------------------------------ image & animation on small screen ------------------------------------------- */}
             <div className=" lg:hidden flex relative pointer-events-none">
               {/* image */}
               <div className="imageContainer flex-1 flex justify-center rounded-full ">
@@ -64,9 +68,17 @@ const Hero = () => {
               </div>
             </div>
             {/* button */}
-            <a href="https://youtu.be/w4o1bsGnjlQ?si=zrdSJttGhysTk_p8" target="_blank"><button className="bg-red-400 mt-5 py-3 px-5 rounded-md text-xl font-medium hover:bg-red-600 transition-all duration-300 ease-in">
-              Watch Intro
-            </button></a>
+            <div className=" space-x-3">
+              <a href="/doctors">
+                <button className="btn">Book Appointment</button>
+              </a>
+              <a
+                href="https://youtu.be/w4o1bsGnjlQ?si=zrdSJttGhysTk_p8"
+                target="_blank"
+              >
+                <button className="btn">Watch Intro</button>
+              </a>
+            </div>
           </div>
           {/* image & animation on large screen */}
           <div className=" hidden lg:flex relative pointer-events-none ">

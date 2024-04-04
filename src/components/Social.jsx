@@ -3,7 +3,7 @@ import { FaFacebookF,FaInstagram,FaXTwitter } from "react-icons/fa6";
 
 const Social = () => {
   return (
-    <div>
+    <div className="absolute">
       <FaFacebookF /> <FaInstagram /> <FaXTwitter/>
     </div>
   )

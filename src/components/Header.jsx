@@ -13,8 +13,8 @@ const Navigation = () => {
     <header className=" w-full bg-white shadow-md fixed top-0 z-[99]">
       <div className=" container m-auto w-full h-[90px] px-4 flex justify-between items-center">
         {/* logo */}
-        <div className="cursor-pointer">
-          <h1 className="text-2xl">Logo</h1>
+        <div>
+          <a href="/"><img src="./MED-LOGO.jpg" alt="med_logo" className="logo"/></a>
         </div>
         {/* links */}
         <div>
@@ -29,7 +29,7 @@ const Navigation = () => {
               <motion.span
                 variants={{
                   close: { rotate: 0, y: 0 },
-                  open: { rotate: 50, y: "5px" },
+                  open: { rotate: 50, y: "7.5px" },
                 }}
                 className="w-10 h-1 bg-black"
               ></motion.span>
@@ -86,7 +86,7 @@ const Navigation = () => {
                         open: { y: "0%", opacity: 1 },
                       }}
                     >
-                      <h1>LOGO</h1>
+                      <a href="/"><img src="./MED-LOGO.jpg" alt="med_logo" className="logo"/></a>
                     </motion.div>
                     {/* links */}
                     <motion.nav
