@@ -46,22 +46,19 @@ export default () => {
             },
           }}
           freeMode={true}
-          navigation={{
-            clickable: true,
-          }}
           pagination={{
             clickable: true,
           }}
           autoplay={true}
           modules={[FreeMode, Pagination, Autoplay]}
-          className="h-full w-[80%] container m-auto"
+          className="h-full container m-auto"
         >
           <div className="">
             {swiperData.map((item) => {
               return (
                 <SwiperSlide
                   key={item.id}
-                  className="flex justify-center gap-[100px] p-5 items-center container m-auto"
+                  className="flex justify-center gap-x-5 lg:gap-[100px] p-5 items-center container m-auto"
                 >
                   <div
                     className="border-[0.1px] border-gray-500/20 h-max rounded-lg px-2 py-4 flex-1 flex flex-col  items-center sm:gap-x-6 lg:gap-y-6 group
@@ -70,7 +67,7 @@ export default () => {
                     {/* icon */}
                     <div className="text-[60px] text-red-500 group-hover:text-blue-500 transition-all duration-500 ease-linear">{item.icon}</div>
                     {/* name */}
-                    <div className="text-base lg:text-2xl capitalize break-words">{item.name}</div>
+                    <div className="text-base lg:text-2xl  capitalize break-words break-all">{item.name}</div>
                   </div>
                 </SwiperSlide>
               );

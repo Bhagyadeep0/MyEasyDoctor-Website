@@ -12,7 +12,7 @@ const Offers = () => {
   ];
 
   return (
-    <section className="container py-[150px] mx-auto">
+    <section className="container my-[150px] mx-auto">
       <div className="text-center mb-5"><h1 className="h1">Offers.</h1></div>
       {offersData.map((item) => (
         <div key={item.id} className="flex flex-col md:flex-row flex-wrap justify-between items-center container mx-auto px-5 gap-10">

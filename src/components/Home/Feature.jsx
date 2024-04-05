@@ -23,7 +23,7 @@ const Feature = () => {
   ];
 
   return (
-   <section className="flex justify-center items-center w-full h-full container py-5 mt-[150px] mx-auto">
+   <section className="flex justify-center items-center w-full h-full container mt-[50px] lg:mt-[150px] mx-auto">
      <div className="w-full h-full flex flex-col gap-5 lg:gap-[50px] justify-between items-center ">
       {/* text */}
       <div className="text-center pt-5 pb-8 lg:pb-4 capitalize">
@@ -33,7 +33,7 @@ const Feature = () => {
         <p className="p">
           World class treatment for everyone. Our health system offers
           unmatched, expert health care.
-        </p>
+        </p><hr className="max-w-[100%] m-auto" />
       </div>
       {/* feature info box */}
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-3">

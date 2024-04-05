@@ -1,11 +1,13 @@
+// import framer motion
+import { motion, useInView } from "framer-motion";
 
+// components
+import Loader from "../components/Loader";
 
 const Contact = () => {
   return (
-    <div>
-      Contact
-    </div>
-  )
-}
+    <Loader />
+  );
+};
 
-export default Contact
+export default Contact;
