@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <section className="mt-[150px] container mx-auto">
-         {/*-------------------------about---------------------- */}
+   <section className="py-[80px]">
+         {/*-------------------------aboutUs---------------------- */}
          <div className="flex flex-col md:flex-row flex-wrap justify-between items-center container mx-auto">
           {/* image container */}
           <div className="flex-1">
@@ -30,7 +30,7 @@ const About = () => {
         </div>
           </div>
         </div>
-    </section>
+   </section>
   );
 };
 

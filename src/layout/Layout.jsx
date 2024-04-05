@@ -26,7 +26,7 @@ const Layout = () => {
           <Route path="/sign-up" element={<SignUp />} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 };

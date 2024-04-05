@@ -39,7 +39,8 @@ const Footer = () => {
   ];
 
   return (
-    <div className="flex justify-center w-full h-fit bg-gray-400 mt-[90px] py-4 px-2 capitalize">
+   <section>
+     <div className="flex justify-center w-full h-full bg-blue-400 py-10 px-2 capitalize">
       <div className="flex flex-col md:flex-row justify-between container m-auto">
         {/* logo */}
         <div>
@@ -78,6 +79,7 @@ const Footer = () => {
         ))}
       </div>
     </div>
+   </section>
   );
 };
 

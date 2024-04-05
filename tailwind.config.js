@@ -43,6 +43,12 @@ export default {
         tiffanyBlue: "#7AC6C3ff",
       },
     },
+    backgroundImage: {
+      doctor01: "url('/doctor_bg.jpg')"
+    },
+    animation:{
+      'spin-slow': 'spin 6s linear infinite',
+    }
   },
   plugins: [],
 };

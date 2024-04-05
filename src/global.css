@@ -23,14 +23,16 @@
   *,*::after,*::before{
     @apply  m-0 p-0 box-border scroll-smooth font-customFont;
   }
+
   body {
-    @apply bg-white/60 leading-none snap-proximity snap-y mt-[90px] scroll-smooth ;
+    @apply bg-white/60 leading-none mt-[90px] scroll-smooth ;
   }
+
   .page {
     @apply w-full h-screen ;
   }
   .h1 {
-    @apply text-[35px] leading-tight md:text-[60px] md:leading-[1.3] mb-8 font-semibold;
+    @apply text-[35px] leading-tight md:text-[60px] md:leading-[1.3] mb-5 font-semibold;
   }
   .h2 {
     @apply text-[35px] leading-tight md:text-[40px] md:leading-[1.3] mb-4 font-semibold;
@@ -52,7 +54,7 @@
   }
   .input,
   .textarea {
-    @apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light;
+    @apply bg-transparent outline-none focus:ring-1 focus:ring-red-200 border border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;

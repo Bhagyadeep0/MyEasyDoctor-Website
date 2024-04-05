@@ -8,6 +8,8 @@ import { FaRegSave } from "react-icons/fa";
 
 const Hero = () => {
   return (
+    <>
+   {/* --------------hero section starts--------------- */}
     <section className="w-full h-full xl:h-[82vh] bg-celeste relative">
       {/* hero centered */}
       <div className="flex flex-wrap justify-center w-full h-full ">
@@ -122,6 +124,8 @@ const Hero = () => {
         </motion.div>
       </div>
     </section>
+    {/* --------------hero section ends--------------- */}
+    </>
   );
 };
 

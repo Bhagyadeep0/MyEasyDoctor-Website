@@ -12,8 +12,7 @@ const Offers = () => {
   ];
 
   return (
-    <section className="container my-[150px] mx-auto">
-      <div className="text-center mb-5"><h1 className="h1">Offers.</h1></div>
+    <section className="container py-[80px] mb-[60px] mx-auto">
       {offersData.map((item) => (
         <div key={item.id} className="flex flex-col md:flex-row flex-wrap justify-between items-center container mx-auto px-5 gap-10">
           {/* image */}
@@ -23,7 +22,7 @@ const Offers = () => {
           {/* text */}
           <div className="flex-1 px-5">
             {/* title */}
-            <h1 className="h1">{item.title}</h1>
+            <h2 className="h2">{item.title}</h2>
             {/* desc */}
             <p className="break-words">{item.desc}</p>
           </div>
