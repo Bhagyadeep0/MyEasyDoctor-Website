@@ -11,10 +11,12 @@ import SignUp from "../pages/SignUp";
 import Footer from "../components/Footer";
 import Doctors from "../pages/Doctors";
 import Social from "../components/Social";
+import ToTop from "../components/ToTop";
 
 const Layout = () => {
   return (
     <Router>
+      {/* <ToTop /> */}
       <Header />
       {/* <Social /> under progress  */}
       <main>

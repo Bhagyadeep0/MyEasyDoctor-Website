@@ -3,7 +3,7 @@
 const About = () => {
   return (
     <div>
-      About
+      <input type="text" />
     </div>
   )
 }

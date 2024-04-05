@@ -1,6 +1,6 @@
 const About = () => {
   return (
-   <section className="py-[80px]">
+   <section className="pt-[120px]">
          {/*-------------------------aboutUs---------------------- */}
          <div className="flex flex-col md:flex-row flex-wrap justify-between items-center container mx-auto">
           {/* image container */}

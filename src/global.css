@@ -54,7 +54,7 @@
   }
   .input,
   .textarea {
-    @apply bg-transparent outline-none focus:ring-1 focus:ring-red-200 border border-white/20 placeholder:text-white/30 placeholder:font-light;
+    @apply outline-none focus:ring-1 focus:ring-blue-800/20 border border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
