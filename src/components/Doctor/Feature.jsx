@@ -34,7 +34,7 @@ const Feature = () => {
 
   return (
     <section className="py-[80px]">
-      <div className="flex flex-col justify-center items-center w-full h-full container  mx-auto gap-y-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center w-full h-full container  mx-auto gap-5">
         {featureData.map((item) => (
           <div
             key={item}

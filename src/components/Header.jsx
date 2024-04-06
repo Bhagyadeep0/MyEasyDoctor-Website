@@ -63,7 +63,7 @@ const Navigation = () => {
                         transition: {
                           staggerChildren: 0.25,
                           when: "afterChildren",
-                          duration: 1,
+                          duration: 0.5,
                           ease: easeInOut,
                         },
                       },
@@ -72,12 +72,12 @@ const Navigation = () => {
                         transition: {
                           staggerChildren: 0.25,
                           when: "beforeChildren",
-                          duration: 1,
+                          duration: 0.5,
                           ease: easeInOut,
                         },
                       },
                     }}
-                    className="absolute flex flex-col justify-center items-center top-0 left-0 gap-y-[50px] text-3xl bg-blue-600 h-screen w-screen container m-auto"
+                    className="absolute flex flex-col justify-center items-center top-0 left-0 gap-y-[50px] text-3xl bg-blue-200 h-screen w-screen container m-auto"
                   >
                     {/* logo */}
                     <motion.div
