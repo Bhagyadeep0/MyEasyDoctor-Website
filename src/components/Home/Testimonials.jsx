@@ -18,7 +18,7 @@ const Testimonials = () => {
       name: "Mr. Gwen Ryan",
       msg: "MyEasyDoctor has revolutionized my healthcare experience with its user-friendly platform and exceptional virtual care. The doctors are knowledgeable and compassionate, making each consultation feel personal. It’s the perfect blend of convenience and quality care, all from the comfort of home.",
       img: "/t-avt-1.png",
-      title: "customer",
+      title: "patient",
     },
     {
       name: "Eda",
@@ -84,7 +84,7 @@ const Testimonials = () => {
             <SwiperSlide key={i}>
               <div className="flex flex-col lg:flex-row justify-between items-center mx-[50px] lg:py-[50px] lg:px-5">
                 {/*----------people,name,title-------------------- */}
-                <div className="bg-blue-800/10 flex-1 flex flex-col items-center space-y-3 px-3 py-[6px]">
+                <div className="flex-1 flex flex-col items-center space-y-3 px-3 py-[6px]">
                   <div>
                     {/* people */}
                     <img src={item.img} alt="img" />

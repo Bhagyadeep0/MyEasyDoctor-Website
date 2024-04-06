@@ -10,6 +10,7 @@ const Footer = () => {
       desc3: "register",
       path1: "/doctors",
       path2: "/sign-up",
+      path3: "/sign-up",
     },
     {
       title: "for Doctor",
@@ -18,6 +19,7 @@ const Footer = () => {
       desc3: "register",
       path1: "/",
       path2: "/sign-up",
+      path3: "/sign-up",
     },
     {
       title: "Contact Us",
@@ -26,6 +28,7 @@ const Footer = () => {
       desc3: "others",
       path1: "/",
       path2: "/sign-up",
+      path3: "/sign-up",
     },
     {
       title: "Follow Us",
