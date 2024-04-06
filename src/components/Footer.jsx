@@ -22,9 +22,16 @@ const Footer = () => {
       path3: "/sign-up",
     },
     {
+      title: "Legal",
+      desc1: "Privacy Policy",
+      desc2: "Terms & Conditions",
+      path1: "/",
+      path2: "/sign-up",
+    },
+    {
       title: "Contact Us",
       desc1: "location",
-      desc2: "mail",
+      desc2: "support@med",
       desc3: "others",
       path1: "/",
       path2: "/sign-up",
