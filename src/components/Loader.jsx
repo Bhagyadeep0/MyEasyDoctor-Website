@@ -8,12 +8,12 @@ const Loader = () => {
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
   return (
-  <div className="w-full h-screen flex justify-center items-center">
+  <div className="w-full h-screen flex justify-center items-center pointer-events-none absolute bottom-0 right-0">
       <motion.div ref={ref} animate={isInView ? "animate" : ""}>
       <motion.div
         initial={{ opacity: 1 }}
         whileInView={{ opacity: 0 }}
-        transition={{ delay: 3, duration: 5 }}
+        transition={{ delay: 3, duration: 2 }}
       >
         <svg
           version="1.0"
@@ -23,7 +23,7 @@ const Loader = () => {
           fill="none"
           viewBox="0 0 516.000000 483.000000"
           preserveAspectRatio="xMidYMid meet"
-          // className="w-[500px]"
+          className="w-[250px] md:w-[500px] lg:w-[1000px]"
         >
           <motion.g
             transform="translate(0.000000,483.000000) scale(0.100000,-0.100000)"

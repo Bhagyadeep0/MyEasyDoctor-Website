@@ -62,4 +62,7 @@
   .logo{
     @apply w-[90px]  rounded-full p-1 cursor-pointer hover:saturate-50
   }
+  .error{
+    @apply text-red-500 text-base italic capitalize;
+  }
 }
