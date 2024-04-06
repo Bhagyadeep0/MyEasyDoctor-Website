@@ -1,10 +1,11 @@
+import Testimonials from "../components/Testimonials"
 
 
 const About = () => {
   return (
-    <div>
-      <input type="text" />
-    </div>
+    <>
+      <Testimonials />
+    </>
   )
 }
 

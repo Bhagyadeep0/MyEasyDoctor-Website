@@ -5,7 +5,7 @@ import Hero from "../components/Home/Hero";
 import Swiper from "../components/Home/SwiperDoctor";
 import Hospitals from "../components/Home/Hospitals";
 import Offers from "../components/Offers";
-import Testimonial from "../components/Home/Testimonials";
+import Testimonial from "../components/Testimonials";
 
 const Home = () => {
   return (
