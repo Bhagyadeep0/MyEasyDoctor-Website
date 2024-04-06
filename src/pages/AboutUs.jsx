@@ -1,13 +1,15 @@
 import Feature from "../components/AboutUs/Feature";
+import About from "../components/AboutUs/About";
 import Testimonials from "../components/Testimonials";
 
-const About = () => {
+const AboutUs = () => {
   return (
     <>
+      <About />
       <Feature />
       <Testimonials />
     </>
   );
 };
 
-export default About;
+export default AboutUs;

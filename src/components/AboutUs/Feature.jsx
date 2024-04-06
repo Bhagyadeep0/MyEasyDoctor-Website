@@ -23,7 +23,7 @@ const Feature = () => {
   ];
 
   return (
-    <section className="pt-[80px]">
+    <section className="pt-[80px] pb-[80px] lg:pb-[100px]">
       <div className="flex justify-center items-center w-full h-full container  mx-auto">
         <div className="w-full h-full flex flex-col gap-5 lg:gap-[50px] justify-between items-center ">
           {/* text */}

@@ -35,13 +35,25 @@ const Testimonials = () => {
     {
       name: "Irma Bode",
       msg: "MyEasyDoctor has revolutionized my healthcare experience with its user-friendly platform and exceptional virtual care. The doctors are knowledgeable and compassionate, making each consultation feel personal. It’s the perfect blend of convenience and quality care, all from the comfort of home.",
-      img: "/t-avt-1.png",
+      img: "/t-avt-4.png",
       title: "Regional Factors Specialist",
     },
     {
-      name: "Bergnaum",
+      name: "Miss Casey Bartoletti",
       msg: "MyEasyDoctor has revolutionized my healthcare experience with its user-friendly platform and exceptional virtual care. The doctors are knowledgeable and compassionate, making each consultation feel personal. It’s the perfect blend of convenience and quality care, all from the comfort of home.",
-      img: "/t-avt-2.png",
+      img: "/t-avt-5.png",
+      title: "Global Web Agent",
+    },
+    {
+      name: "Gladys Bode",
+      msg: "MyEasyDoctor has revolutionized my healthcare experience with its user-friendly platform and exceptional virtual care. The doctors are knowledgeable and compassionate, making each consultation feel personal. It’s the perfect blend of convenience and quality care, all from the comfort of home.",
+      img: "/t-avt-6.png",
+      title: "Human Solutions Designer",
+    },
+    {
+      name: "William Gorczany",
+      msg: "MyEasyDoctor has revolutionized my healthcare experience with its user-friendly platform and exceptional virtual care. The doctors are knowledgeable and compassionate, making each consultation feel personal. It’s the perfect blend of convenience and quality care, all from the comfort of home.",
+      img: "/t-avt-7.png",
       title: "Senior Functionality Director",
     },
   ];
@@ -69,7 +81,6 @@ const Testimonials = () => {
               spaceBetween: 15,
             },
           }}
-          grabCursor={true}
           freeMode={true}
           pagination={{
             clickable: true,
@@ -85,9 +96,9 @@ const Testimonials = () => {
               <div className="flex flex-col lg:flex-row justify-between items-center mx-[50px] lg:py-[50px] lg:px-5">
                 {/*----------people,name,title-------------------- */}
                 <div className="flex-1 flex flex-col items-center space-y-3 px-3 py-[6px]">
-                  <div>
+                  <div className="w-1/2 self-center">
                     {/* people */}
-                    <img src={item.img} alt="img" />
+                    <img src={item.img} alt="img" className="rounded-full object-cover" />
                   </div>
                   {/* name */}
                   <h3 className="h3 capitalize">{item.name}</h3>

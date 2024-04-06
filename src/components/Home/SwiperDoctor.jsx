@@ -53,6 +53,7 @@ export default () => {
               },
             }}
             freeMode={true}
+            grabCursor={true}
             pagination={{
               clickable: true,
             }}
