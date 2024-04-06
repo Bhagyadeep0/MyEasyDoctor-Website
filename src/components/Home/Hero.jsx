@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <>
    {/* --------------hero section starts--------------- */}
-    <section className="w-full h-full xl:h-[82vh]  bg-gradient-to-r from-cyan-500 via-red-500 to-blue-500 relative">
+    <section className="w-full h-full xl:h-[82vh]  bg-cyan-400/30 relative">
       {/* hero centered */}
       <div className="flex flex-wrap justify-center w-full h-full ">
         {/* contents */}

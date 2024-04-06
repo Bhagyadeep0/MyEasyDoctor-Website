@@ -67,7 +67,7 @@ const Feature = () => {
             </div>
             {/* buttons  */}
             <div className="flex-1 flex flex-col mb-3 space-y-5">
-              <button className="btn">Open profile</button>
+              <a href="/doctor-profile"><button className="btn">Open profile</button></a>
               <button className="btn">Book Appointment</button>
             </div>
           </div>
