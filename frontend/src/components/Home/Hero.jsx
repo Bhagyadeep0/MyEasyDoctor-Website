@@ -19,7 +19,7 @@ const Hero = () => {
           <div className="flex-1 text-center lg:text-left lg:max-w-[50%] py-3 px-4">
             {/* title */}
             <h1 className="h1 text-wrap">
-              <span className="text-tiffanyBlue">MyEasyDoctor</span>
+              <span className="text-red-500">MyEasyDoctor</span>
               <br />
               Where <i>Appointments</i> Meet <i>Convenience</i>.
             </h1>
