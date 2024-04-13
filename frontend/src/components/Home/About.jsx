@@ -1,3 +1,7 @@
+//link from react
+import { Link } from "react-router-dom";
+
+
 const About = () => {
   return (
    <section className="pt-[120px]">
@@ -19,7 +23,7 @@ const About = () => {
               cherished partner in the community, and be catalysts for positive
               transformation for all.
             </p>
-            <a href="/about"><button className="mt-5 btn">Tell Me More</button></a>
+            <Link to="/about"><button className="mt-5 btn">Tell Me More</button></Link>
             <div className="mt-[30px] italic">
           {/* msg */}
           <h2 className="text-[20px] lg:text-[25px]  capitalize ">

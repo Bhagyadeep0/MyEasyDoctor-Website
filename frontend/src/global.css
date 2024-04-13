@@ -40,7 +40,7 @@
   .h3 {
     @apply text-[20px] leading-tight md:leading-[1.3] mb-2 font-semibold;
   }
-  p {
+  .p {
     @apply leading-[32px] tracking-[0.2px] font-light text-[20px];
   }
   .btn{

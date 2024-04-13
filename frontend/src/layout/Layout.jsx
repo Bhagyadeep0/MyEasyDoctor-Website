@@ -13,6 +13,7 @@ import Doctors from "../pages/Doctors";
 import Social from "../components/Social";
 import ToTop from "../components/ToTop";
 import DoctorProfile from "../components/Doctor/DoctorProfile";
+import Login from "../pages/Login";
 
 const Layout = () => {
   return (
@@ -27,6 +28,7 @@ const Layout = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/doctor-profile" element={<DoctorProfile/>} />
         </Routes>
       </main>

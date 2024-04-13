@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { SiSpeedtest } from "react-icons/si";
 import { FaUserDoctor } from "react-icons/fa6";
 import { FaRegSave } from "react-icons/fa";
+//link from react
+import { Link } from "react-router-dom";
 
 
 const Hero = () => {
@@ -68,15 +70,15 @@ const Hero = () => {
             </div>
             {/* button */}
             <div className=" space-x-3">
-              <a href="/doctors">
+              <Link to="/doctors">
                 <button className="btn">Book Appointment</button>
-              </a>
-              <a
-                href="https://youtu.be/w4o1bsGnjlQ?si=zrdSJttGhysTk_p8"
+              </Link>
+              <Link
+                to="https://youtu.be/w4o1bsGnjlQ?si=zrdSJttGhysTk_p8"
                 target="_blank"
               >
                 <button className="btn">Watch Intro</button>
-              </a>
+              </Link>
             </div>
           </div>
           {/* image & animation on large screen */}
