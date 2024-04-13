@@ -69,21 +69,21 @@ const Footer = () => {
               target="_blank"
               className="cursor-pointer hover:text-blue-800"
             >
-              <p className="p mb-3">{item.desc1}</p>
+              <p className="p text-base mb-3">{item.desc1}</p>
             </a>
             <a
               href={item.path2}
               target="_blank"
               className="cursor-pointer hover:text-blue-800"
             >
-              <p className="p mb-3">{item.desc2}</p>
+              <p className="p text-base mb-3">{item.desc2}</p>
             </a>
             <a
               href={item.path3}
               target="_blank"
               className="cursor-pointer hover:text-blue-800"
             >
-              <p className="p">{item.desc3}</p>
+              <p className="p text-base">{item.desc3}</p>
             </a>
           </div>
         ))}

@@ -23,7 +23,16 @@ const Hero = () => {
             <p className="text-red-500 mb-4 p text-wrap">
             Discover the best doctors, clinic & hospital the city nearest to you.
             </p>
+            <div className="mt-[30px] italic">
+          {/* quote */}
+          <h2 className="text-[20px] lg:text-[25px]  capitalize ">
+            “ <span className="text-red-500">Medicines</span> cure diseases, but only doctors can cure <span className="text-blue-500">patients.</span>”
+          </h2>
+          {/* name */}
+          <p className="break-words text-gray-600/50 font-[600] text-right">-Carl Jung</p>
+        </div>
           </div>
+          
           {/*---------------------------- search filed------------------------------------ */}
           <div className=" flex-1 flex w-full gap-x-5 justify-center items-center relative">
             {/* search input */}

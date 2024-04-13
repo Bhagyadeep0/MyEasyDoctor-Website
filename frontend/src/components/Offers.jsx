@@ -1,4 +1,4 @@
-import React from "react";
+import {Link} from "react-router-dom"
 
 const Offers = () => {
   const offersData = [
@@ -8,6 +8,7 @@ const Offers = () => {
       title: "Get the benefit of Swasthya Sathi Card",
       desc: "Basic health cover for secondary and tertiary care up to Rs. 5 lakh per annum per family. Paperless, Cashless, Smart Card based. All pre-existing diseases are covered. There is no cap on the family size and Parents from both the Spouse are included.cost.",
       img: "/swasthya_sathi_card.jpg",
+      url: "https://swasthyasathi.gov.in/",
     },
   ];
 
@@ -24,7 +25,8 @@ const Offers = () => {
             {/* title */}
             <h2 className="h2">{item.title}</h2>
             {/* desc */}
-            <p className="break-words">{item.desc}</p>
+            <p className="break-words mb-3">{item.desc}</p>
+            <Link to={item.url} target="_blank" className="text-blue-400 hover:text-red-400 transition-all duration-300 ease-in italic underline" >Learn more</Link>
           </div>
         </div>
       ))}

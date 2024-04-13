@@ -25,7 +25,7 @@ const About = () => {
             </p>
             <Link to="/about"><button className="mt-5 btn">Tell Me More</button></Link>
             <div className="mt-[30px] italic">
-          {/* msg */}
+          {/* quote */}
           <h2 className="text-[20px] lg:text-[25px]  capitalize ">
             “ <span className="text-red-500">Medicines</span> cure diseases, but only doctors can cure <span className="text-blue-500">patients.</span>”
           </h2>
