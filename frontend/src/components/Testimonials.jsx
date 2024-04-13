@@ -96,7 +96,7 @@ const Testimonials = () => {
               <div className="flex flex-col lg:flex-row justify-between items-center mx-[50px] lg:py-[50px] lg:px-5">
                 {/*----------people,name,title-------------------- */}
                 <div className="flex-1 flex flex-col items-center space-y-3 px-3 py-[6px]">
-                  <div className="w-1/2 self-center">
+                  <div className="w-[100px] self-center">
                     {/* people */}
                     <img src={item.img} alt="img" className="rounded-full object-cover" />
                   </div>

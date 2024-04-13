@@ -6,6 +6,7 @@ import Swiper from "../components/Home/SwiperDoctor";
 import Hospitals from "../components/Home/Hospitals";
 import Offers from "../components/Offers";
 import Testimonial from "../components/Testimonials";
+import Faq from "../components/Faq";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <About />
       <Swiper />
       <Offers />
+      <Faq />
       <Testimonial />
     </>
   );
