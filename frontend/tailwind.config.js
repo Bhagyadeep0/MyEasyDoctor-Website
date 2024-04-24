@@ -35,16 +35,13 @@ export default {
         'moveXRe': 'moveXRe 5s linear infinite',
       },
       colors: {
-        bitterSweet: "#FF6161ff",
-        midnightGreen: "#1B4652ff",
-        celeste: "#B1EAE2ff",
-        tiffanyGreen: "#9CE3DCff",
-        gunMetal: "#1D333Dff",
-        tiffanyBlue: "#7AC6C3ff",
+        primary: "#d00000",
+        secondary: "#0466c8",
       },
+      backgroundImage: {
+      img: "url(/doctor_bg.jpg)",
+      noPage: "url(/no-page.jpg)"
     },
-    backgroundImage: {
-      doctor01: "url('/doctor_bg.jpg')"
     },
     animation:{
       'spin-slow': 'spin 6s linear infinite',

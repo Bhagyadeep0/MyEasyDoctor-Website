@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <>
    {/* --------------hero section starts--------------- */}
-    <section className="w-full h-full xl:h-screen bg-doctor01 bg-no-repeat bg-cover relative">
+    <section className="w-full h-full xl:h-screen bg-img bg-no-repeat bg-cover relative">
       {/* hero centered */}
       <div className="flex flex-wrap justify-center items-center w-full h-full ">
         {/* contents */}

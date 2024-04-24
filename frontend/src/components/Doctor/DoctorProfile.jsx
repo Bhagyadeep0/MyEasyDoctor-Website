@@ -1,5 +1,5 @@
 // react icons
-import { MdAddCall,MdLocationCity } from "react-icons/md";
+import { MdAddCall, MdLocationCity } from "react-icons/md";
 
 const DoctorProfile = () => {
   return (
@@ -16,11 +16,21 @@ const DoctorProfile = () => {
           {/* desc */}
           <p className="italic text-red-600 text-[30px]">Infrastructure</p>
           {/* location */}
-          <p className="text-[25px] underline flex items-center gap-x-5 group"><span className="bg-blue-100 p-3 rounded-full group-hover:bg-blue-200 transition-all duration-300 ease-in"><MdLocationCity /></span> <span>38979 Emilie Club,Giovani Knoll,GD</span></p>
+          <p className="text-[25px] underline flex items-center gap-x-5 group">
+            <span className="bg-blue-100 p-3 rounded-full group-hover:bg-blue-200 transition-all duration-300 ease-in">
+              <MdLocationCity />
+            </span>{" "}
+            <span>38979 Emilie Club,Giovani Knoll,GD</span>
+          </p>
           {/* other, mobile,mail */}
           <div className="mt-[30px] text-2xl italic group">
-            <a href="/" className="flex items-center gap-x-5"><span className="bg-blue-100 p-3 rounded-full group-hover:bg-blue-200 transition-all duration-300 ease-in"><MdAddCall/></span><span>998.244.6316 x495</span></a>
-        </div>
+            <a href="/" className="flex items-center gap-x-5">
+              <span className="bg-blue-100 p-3 rounded-full group-hover:bg-blue-200 transition-all duration-300 ease-in">
+                <MdAddCall />
+              </span>
+              <span>998.244.6316 x495</span>
+            </a>
+          </div>
           {/* bio */}
           <p>
             Quia ipsa nihil. Dicta in expedita quis delectus ducimus

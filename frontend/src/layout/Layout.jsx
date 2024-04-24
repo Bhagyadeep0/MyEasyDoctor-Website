@@ -14,6 +14,7 @@ import Social from "../components/Social";
 import ToTop from "../components/ToTop";
 import DoctorProfile from "../components/Doctor/DoctorProfile";
 import Login from "../pages/Login";
+import NoPage from "../components/NoPage";
 
 const Layout = () => {
   return (
@@ -30,6 +31,7 @@ const Layout = () => {
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/doctor-profile" element={<DoctorProfile/>} />
+          <Route path="/*" element={<NoPage/>} />
         </Routes>
       </main>
       <Footer />

@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <>
    {/* --------------hero section starts--------------- */}
-    <section className="w-full h-full xl:h-[82vh]  bg-cyan-400/30 relative">
+    <section className="w-full h-full xl:h-[82vh] bg-gradient-to-r from-secondary/30 to-blue-600/80  relative">
       {/* hero centered */}
       <div className="flex flex-wrap justify-center w-full h-full ">
         {/* contents */}
@@ -26,7 +26,7 @@ const Hero = () => {
               Where <i>Appointments</i> Meet <i>Convenience</i>.
             </h1>
             {/* desc */}
-            <p className="text-red-500 mb-4 p text-wrap">
+            <p className="text-white mb-4 p text-wrap">
               MyEasyDoctor is like a helpful digital assistant for your health!
               It's a safe and flexible platform that makes it easy for hospitals
               and clinics to support people on their health journeys. With its
@@ -38,7 +38,7 @@ const Hero = () => {
             <div className=" lg:hidden flex relative pointer-events-none">
               {/* image */}
               <div className="imageContainer flex-1 flex justify-center rounded-full ">
-                <img src="/doctor01.png" alt="doctor.png" width={300} />
+                <img src="/doctor.png" alt="doctor.png" width={300} />
               </div>
               {/* floating elements */}
               <div className="text-sm leading-3">
@@ -85,7 +85,7 @@ const Hero = () => {
           <div className=" hidden lg:flex relative pointer-events-none ">
             {/* image */}
             <div className="imageContainer">
-              <img src="/doctor01.png" alt="doctor.png" />
+              <img src="/doctor.png" alt="doctor.png" width={600} />
             </div>
             {/* floating elements */}
             <div className="text-xl">
