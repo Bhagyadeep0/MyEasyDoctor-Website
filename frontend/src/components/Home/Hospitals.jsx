@@ -22,11 +22,11 @@ const sliderVariants = {
   return (
     <div className=" w-full h-fit py-2 px-[10px]text-blue-500/55 bg-blue-400/10 overflow-hidden">
       <motion.div variants={sliderVariants} initial="initial" animate="animate" className="flex justify-between items-center w-full h-full container m-auto overflow-x-hidden">
-        <img src="./jeevan_rekha_hospital.jpg" alt="img" className='logo w-[50px] lg:w-[100px] lg:w-max-[120px]'/>
-        <img src="./jeevan_rekha_hospital.jpg" alt="img" className='logo w-[50px] lg:w-[100px] lg:w-max-[120px]'/>
-        <img src="./jeevan_rekha_hospital.jpg" alt="img" className='logo w-[50px] lg:w-[100px] lg:w-max-[120px]'/>
-        <img src="./jeevan_rekha_hospital.jpg" alt="img" className='logo w-[50px] lg:w-[100px] lg:w-max-[120px]'/>
-        <img src="./jeevan_rekha_hospital.jpg" alt="img" className='logo w-[50px] lg:w-[100px] lg:w-max-[120px]'/>
+        <img src="./Medical care logo.png" alt="img" className='logo w-[50px] lg:w-[100px] lg:w-max-[120px]'/>
+        <img src="./Keithston.png" alt="img" className='logo w-[50px] lg:w-[100px] lg:w-max-[120px]'/>
+        <img src="./Medical care logo.png" alt="img" className='logo w-[50px] lg:w-[100px] lg:w-max-[120px]'/>
+        <img src="./Keithston.png" alt="img" className='logo w-[50px] lg:w-[100px] lg:w-max-[120px]'/>
+        <img src="./Medical care logo.png" alt="img" className='logo w-[50px] lg:w-[100px] lg:w-max-[120px]'/>
       </motion.div>
     </div>
   );
