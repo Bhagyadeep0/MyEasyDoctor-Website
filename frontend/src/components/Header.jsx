@@ -5,7 +5,6 @@ import { easeInOut, motion, useCycle, AnimatePresence } from "framer-motion";
 import Register from "./Register";
 import Link from "./Link";
 
-
 const Navigation = () => {
   const [toggle, setToggle] = useCycle(false, true);
 
@@ -14,7 +13,9 @@ const Navigation = () => {
       <div className=" container m-auto w-full h-[90px] px-4 flex justify-between items-center">
         {/* logo */}
         <div>
-          <a href="/"><img src="./MED-LOGO.jpg" alt="med_logo" className="logo"/></a>
+          <a href="/">
+            <img src="./MED-LOGO.jpg" alt="med_logo" className="logo" />
+          </a>
         </div>
         {/* links */}
         <div>
@@ -86,7 +87,13 @@ const Navigation = () => {
                         open: { y: "0%", opacity: 1 },
                       }}
                     >
-                      <a href="/"><img src="./MED-LOGO.jpg" alt="med_logo" className="logo"/></a>
+                      <a href="/">
+                        <img
+                          src="./MED-LOGO.jpg"
+                          alt="med_logo"
+                          className="logo"
+                        />
+                      </a>
                     </motion.div>
                     {/* links */}
                     <motion.nav
@@ -96,7 +103,7 @@ const Navigation = () => {
                       }}
                       className="space-y-10 lg:hidden"
                     >
-                      <Link />
+                      <Link setToggle={setToggle} />
                     </motion.nav>
                     {/* socials */}
                     <motion.div
@@ -113,11 +120,11 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/*--------------------------- large screen -------------------------- */}
-            {/* links */}
-            <nav className="lg:flex gap-x-8 hidden">
-              <Link />
-            </nav>
+          {/*--------------------------- -----------------large screen --------------------------------------- */}
+          {/* links */}
+          <nav className="lg:flex gap-x-8 hidden">
+            <Link />
+          </nav>
         </div>
         {/* social */}
         <div className="hidden lg:flex text-2xl">

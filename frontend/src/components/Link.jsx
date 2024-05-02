@@ -1,7 +1,7 @@
 // react router
 import { NavLink } from "react-router-dom";
 
-const Link = () => {
+const Link = ({setToggle}) => {
   // navigation data
   const navData = [
     { id:"1", name: "home", path: "/" },
@@ -16,6 +16,7 @@ const Link = () => {
           <NavLink
             to={item.path}
             key={item.id}
+            onClick={() => setToggle()}
             className={navClass=>navClass.isActive ? "text-red-500" : "text-blue-500 hover:text-red-500"}
             >
             {item.name}
