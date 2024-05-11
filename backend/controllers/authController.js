@@ -2,6 +2,15 @@ import User from "../models/UserSchema.js";
 import Doctor from "../models/DoctorSchema.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
+
+const genToken = (user) => {
+  return jwt.sign(
+    { id: user._id, type: user.type },
+    process.env.JWT_PRIVATE_KEY,
+    { expiresIn: "15d" }
+  );
+};
+
 export const register = async (req, res) => {
   const { name, email, password, type, gender } = req.body;
 
@@ -33,7 +42,7 @@ export const register = async (req, res) => {
     }
 
     if (type === "doctor") {
-      user = new User({
+      user = new Doctor({
         name,
         email,
         password: hashPassword,
@@ -47,7 +56,7 @@ export const register = async (req, res) => {
       .status(200)
       .json({ success: true, message: "user successfully created" });
   } catch (err) {
-    console.log(err)
+    console.log(err);
     res
       .status(500)
       .json({ success: false, message: "Server error. Try Again" });
@@ -55,6 +64,47 @@ export const register = async (req, res) => {
 };
 
 export const login = async (req, res) => {
+  const { email } = req.body;
   try {
-  } catch (err) {}
+    let user = null;
+
+    const patient = await User.findOne({ email });
+    const doctor = await Doctor.findOne({ email });
+
+    if (patient) {
+      user = patient;
+    }
+    if (doctor) {
+      user = doctor;
+    }
+    //
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    //
+    const isPasswordMatch = await bcrypt.compare(
+      req.body.password,
+      user.password
+    );
+
+    if (!isPasswordMatch) {
+      return res
+        .status(400)
+        .json({ status: false, message: "Invalid Password" });
+    }
+    const token = genToken(user);
+
+    const { password, type, appointments, ...rest } = user._doc;
+    res
+      .status(200)
+      .json({
+        status: true,
+        message: "Login Successful",
+        token,
+        data: { ...rest },
+        type,
+      });
+  } catch (err) {
+    res.status(500).json({ status: false, message: "Login Failed" });
+  }
 };
