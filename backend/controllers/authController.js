@@ -77,7 +77,7 @@ export const login = async (req, res) => {
     if (doctor) {
       user = doctor;
     }
-    //
+    // check user existence
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
@@ -95,15 +95,13 @@ export const login = async (req, res) => {
     const token = genToken(user);
 
     const { password, type, appointments, ...rest } = user._doc;
-    res
-      .status(200)
-      .json({
-        status: true,
-        message: "Login Successful",
-        token,
-        data: { ...rest },
-        type,
-      });
+    res.status(200).json({
+      status: true,
+      message: "Login Successful",
+      token,
+      data: { ...rest },
+      type,
+    });
   } catch (err) {
     res.status(500).json({ status: false, message: "Login Failed" });
   }
